@@ -49,6 +49,7 @@
   &:nth-child(2) {
     .slider__item-text {
       margin-top: 7.8rem;
+      transition-delay: 0.75s;
 
       @media (min-width: $stop-scaling) {
         margin-top: 78px;
@@ -96,6 +97,26 @@
   max-width: 34rem;
   font-size: 1.8rem;
   line-height: 2rem;
+  opacity: 0;
+  transform: translateX(30px);
+  transition: none;
+
+  .swiper-slide-active &,
+  .swiper-slide-next & {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.5s ease 500ms, transform 0.5s ease 500ms;
+  }
+
+  .screen--hidden & {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: none;
+  }
+
+  .swiper-slide-next & {
+    transition-delay: 1s;
+  }
 
   @media (min-width: $stop-scaling) {
     margin-top: 36px;
