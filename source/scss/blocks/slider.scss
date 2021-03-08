@@ -101,11 +101,11 @@
   transform: translateX(30px);
   transition: none;
 
-  .swiper-slide-active &,
-  .swiper-slide-next & {
+  .active .swiper-slide-active &,
+  .active .swiper-slide-next & {
     opacity: 1;
     transform: translateX(0);
-    transition: opacity 0.5s ease 500ms, transform 0.5s ease 500ms;
+    transition: opacity 0.5s ease 0.5s, transform 0.5s ease 0.5s;
   }
 
   .screen--hidden & {
@@ -114,8 +114,8 @@
     transition: none;
   }
 
-  .swiper-slide-next & {
-    transition-delay: 1s;
+  .active .swiper-slide-next & {
+    transition-delay: 0.35s;
   }
 
   @media (min-width: $stop-scaling) {
