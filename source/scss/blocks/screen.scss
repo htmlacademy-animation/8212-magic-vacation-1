@@ -50,6 +50,11 @@
   transform: translateY(100%);
   transition: opacity 0.35s cubic-bezier(0.33, 1, 0.68, 1), transform 0.35s cubic-bezier(0.33, 1, 0.68, 1);
 
+  .page-loaded & {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
   @media (max-width: $tablet) and (orientation: portrait) {
     width: 3.5rem;
     height: 3.5rem;

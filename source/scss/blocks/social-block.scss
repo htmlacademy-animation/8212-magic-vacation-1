@@ -29,13 +29,20 @@
   &::before {
     @include center;
     content: "";
-    width: 100%;
-    height: 100%;
+    width: 0;
+    height: 0;
     border-radius: 50%;
     background-color: $c-light;
     border: 2px solid $c-light;
     z-index: -1;
-    transition: width 0.3s ease, height 0.3s ease;
+    opacity: 0;
+    transition: opacity 0.35s cubic-bezier(0.33, 1, 0.68, 1), width 0.35s cubic-bezier(0.33, 1, 0.68, 1), height 0.35s cubic-bezier(0.33, 1, 0.68, 1);
+
+    .page-loaded & {
+      opacity: 1;
+      width: 100%;
+      height: 100%;
+    }
   }
 
   svg {
