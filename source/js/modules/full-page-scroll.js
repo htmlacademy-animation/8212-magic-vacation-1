@@ -40,7 +40,7 @@ export default class FullPageScroll {
   }
 
   changePageDisplay() {
-    if ( this.prevScreen === 1 && this.activeScreen === 2 ) {
+    if (this.prevScreen === 1 && this.activeScreen === 2) {
       this.pageOverlay.classList.add(`page-overlay--active`);
       setTimeout(() => {
         this.changeVisibilityDisplay();
