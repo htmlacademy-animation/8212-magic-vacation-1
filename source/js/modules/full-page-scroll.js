@@ -6,8 +6,10 @@ export default class FullPageScroll {
 
     this.screenElements = document.querySelectorAll(`.screen:not(.screen--result)`);
     this.menuElements = document.querySelectorAll(`.page-header__menu .js-menu-link`);
+    this.pageOverlay = document.querySelector(`.page-overlay`);
 
     this.activeScreen = 0;
+    this.prevScreen = 0;
     this.onScrollHandler = this.onScroll.bind(this);
     this.onUrlHashChengedHandler = this.onUrlHashChanged.bind(this);
   }
@@ -32,12 +34,21 @@ export default class FullPageScroll {
 
   onUrlHashChanged() {
     const newIndex = Array.from(this.screenElements).findIndex((screen) => location.hash.slice(1) === screen.id);
+    this.prevScreen = this.activeScreen;
     this.activeScreen = (newIndex < 0) ? 0 : newIndex;
     this.changePageDisplay();
   }
 
   changePageDisplay() {
-    this.changeVisibilityDisplay();
+    if (this.prevScreen === 1 && this.activeScreen === 2) {
+      this.pageOverlay.classList.add(`page-overlay--active`);
+      setTimeout(() => {
+        this.changeVisibilityDisplay();
+      }, 400);
+    } else {
+      this.changeVisibilityDisplay();
+    }
+
     this.changeActiveMenuItem();
     this.emitChangeDisplayEvent();
   }
@@ -48,6 +59,7 @@ export default class FullPageScroll {
       screen.classList.remove(`active`);
     });
     this.screenElements[this.activeScreen].classList.remove(`screen--hidden`);
+    this.pageOverlay.classList.remove(`page-overlay--active`);
     setTimeout(() => {
       this.screenElements[this.activeScreen].classList.add(`active`);
     }, 100);

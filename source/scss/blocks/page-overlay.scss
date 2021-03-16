@@ -1,0 +1,17 @@
+.page-overlay {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 1;
+  background-color: $c-dark;
+  transform: scaleY(0);
+  transform-origin: bottom;
+
+  &--active {
+    transform: scaleY(1);
+    transition: transform 0.5s ease;
+  }
+}
