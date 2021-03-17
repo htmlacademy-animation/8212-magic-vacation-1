@@ -210,9 +210,9 @@
 
     .page-loaded & {
       animation-name: move-prize-numbers;
-      animation-duration: 0.75s;
+      animation-duration: 0.5s;
       animation-fill-mode: forwards;
-      animation-delay: 0.5s;
+      animation-delay: 0.35s;
     }
   }
 
@@ -220,6 +220,14 @@
     margin: 0;
     opacity: 0;
     transform: translateX(30px);
+
+    .page-loaded & {
+      animation-name: move-prize-text-primary, move-prize-text-secondary;
+      animation-duration: 0.5s, 0.5s;
+      animation-fill-mode: forwards, forwards;
+      animation-timing-function: ease-in, ease-out;
+      animation-delay: 0.5s, 0.5s;
+    }
 
     @media (max-width: $tablet) and (orientation: portrait) {
       min-height: calc(1.4rem * 2.2);
@@ -264,5 +272,17 @@
 @keyframes move-prize-numbers {
   to {
     opacity: 1;
+  }
+}
+
+@keyframes move-prize-text-primary {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes move-prize-text-secondary {
+  to {
+    transform: translateX(0);
   }
 }
