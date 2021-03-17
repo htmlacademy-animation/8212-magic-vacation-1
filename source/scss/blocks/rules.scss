@@ -145,6 +145,38 @@
   }
 
   &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: $c-purple;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(0, 0);
+
+    @media (max-width: $tablet) and (orientation: portrait) {
+      top: 1rem;
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+
+    @media (max-width: $mobile) and (orientation: landscape) {
+      top: 0.6rem;
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+
+    .page-loaded & {
+      animation-name: move-prize-bullets;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      animation-timing-function: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    }
+  }
+
+  &::after {
     content: counter(li);
     counter-increment: li;
     position: absolute;
@@ -155,12 +187,10 @@
     font-family: $font-alt;
     font-weight: 400;
     font-size: 2.4rem;
-    background-color: $c-purple;
     border-radius: 50%;
     line-height: 5rem;
     text-align: center;
     opacity: 0;
-    transform: scale(0, 0);
 
     @media (max-width: $tablet) and (orientation: portrait) {
       top: 1rem;
@@ -176,6 +206,13 @@
       height: 2.5rem;
       line-height: 3rem;
       font-size: 1.4rem;
+    }
+
+    .page-loaded & {
+      animation-name: move-prize-numbers;
+      animation-duration: 0.75s;
+      animation-fill-mode: forwards;
+      animation-delay: 0.5s;
     }
   }
 
@@ -213,5 +250,19 @@
   @media (max-width: $mobile) and (orientation: landscape) {
     bottom: 2rem;
     right: 1.5rem;
+  }
+}
+
+
+@keyframes move-prize-bullets {
+  to {
+    opacity: 1;
+    transform: scale(1,1);
+  }
+}
+
+@keyframes move-prize-numbers {
+  to {
+    opacity: 1;
   }
 }
