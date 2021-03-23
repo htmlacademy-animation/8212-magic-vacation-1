@@ -52,6 +52,23 @@
   }
 }
 
+.text-word {
+  display: inline-block;
+  margin: 0 0.1em;
+  overflow: hidden;
+  white-space: nowrap;
+
+  & > span {
+    transform: translate(0, 1.1em);
+    display: inline-block;
+    padding-top: .16em;
+
+    .active .intro__title.text-animated & {
+      transform: translate(0, 0);
+    }
+  }
+}
+
 .intro__content {
   display: flex;
   align-items: flex-end;

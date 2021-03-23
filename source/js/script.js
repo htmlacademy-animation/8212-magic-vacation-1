@@ -22,3 +22,14 @@ social();
 
 const fullPageScroll = new FullPageScroll();
 fullPageScroll.init();
+
+// Add text animation
+const animationIntroTitle = new AccentTypographyBuild(
+  `.intro__title`,
+  1000,
+  `text-animated`,
+  `transform`
+);
+setTimeout(() => {
+  animationIntroTitle.runAnimation();
+}, 500);
