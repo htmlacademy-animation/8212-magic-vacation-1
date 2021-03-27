@@ -7,8 +7,8 @@ import chat from './modules/chat.js';
 import result from './modules/result.js';
 import form from './modules/form.js';
 import social from './modules/social.js';
-import {AccentTypographyBuild} from './modules/accent-typography';
 import FullPageScroll from './modules/full-page-scroll';
+import './modules/accent-typography';
 
 // init modules
 mobileHeight();
@@ -22,14 +22,3 @@ social();
 
 const fullPageScroll = new FullPageScroll();
 fullPageScroll.init();
-
-// Add text animation
-const animationIntroTitle = new AccentTypographyBuild(
-  `.intro__title`,
-  1000,
-  `text-animated`,
-  `transform`
-);
-setTimeout(() => {
-  animationIntroTitle.runAnimation();
-}, 500);
