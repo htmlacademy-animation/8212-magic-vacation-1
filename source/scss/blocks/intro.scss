@@ -63,7 +63,7 @@
     display: inline-block;
     padding-top: .16em;
 
-    .active .intro__title.text-animated & {
+    .active .text-animated & {
       transform: translate3d(0, 0, 0);
     }
   }

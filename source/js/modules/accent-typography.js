@@ -21,16 +21,20 @@ class AccentTypographyBuild {
       case 6:
       case 9:
       case 11:
+      case 14:
         this._timeOffset = 0;
         break;
       case 1:
       case 3:
       case 5:
+      case 13:
+      case 15:
         this._timeOffset = 100;
         break;
       case 4:
       case 8:
       case 10:
+      case 16:
         this._timeOffset = 150;
         break;
       case 7:
@@ -86,4 +90,54 @@ const animationIntroTitle = new AccentTypographyBuild(
 );
 setTimeout(() => {
   animationIntroTitle.runAnimation();
+}, 200);
+
+const animationIntroDate = new AccentTypographyBuild(
+  `.intro__date`,
+  400,
+  `text-animated`,
+  `transform`
+);
+setTimeout(() => {
+  animationIntroDate.runAnimation();
+}, 700);
+
+const animationHistoryTitle = new AccentTypographyBuild(
+  `.slider__item-title`,
+  400,
+  `text-animated`,
+  `transform`
+);
+setTimeout(() => {
+  animationHistoryTitle.runAnimation();
+}, 200);
+
+const animationPrizesTitle = new AccentTypographyBuild(
+  `.prizes__title`,
+  400,
+  `text-animated`,
+  `transform`
+);
+setTimeout(() => {
+  animationPrizesTitle.runAnimation();
+}, 200);
+
+const animationRulesTitle = new AccentTypographyBuild(
+  `.rules__title`,
+  400,
+  `text-animated`,
+  `transform`
+);
+setTimeout(() => {
+  animationRulesTitle.runAnimation();
+}, 200);
+
+const animationGameTitle = new AccentTypographyBuild(
+  `.game__title`,
+  400,
+  `text-animated`,
+  `transform`
+);
+setTimeout(() => {
+  animationGameTitle.runAnimation();
 }, 200);
