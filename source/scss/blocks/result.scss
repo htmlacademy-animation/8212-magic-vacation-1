@@ -24,34 +24,44 @@
 
 .result__image {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  left: 50%;
   bottom: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 75%;
   z-index: -1;
-
-  @media (orientation: portrait) {
-    left: -1rem;
-    right: -1rem;
-  }
-
-  picture {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
+  max-width: 1000px;
+  transform: translateX(-50%);
 
   img {
     display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+    position: absolute;
+    height: auto;
   }
+}
+
+.result__image-leaf-blue-1 {
+  width: 35%;
+  left: 50%;
+  bottom: 21vh;
+}
+.result__image-leaf-blue-2 {
+  width: 33%;
+  left: 10%;
+  bottom: 10vh;
+}
+.result__image-leaf-green {
+  width: 42%;
+  left: 50%;
+  bottom: 16vh;
+}
+.result__image-suitcase {
+  width: 40%;
+  left: 28%;
+  bottom: 12vh;
+}
+.result__image-flamingo {
+  width: 26%;
+  left: 27%;
+  bottom: 14vh;
 }
 
 .result__title {
