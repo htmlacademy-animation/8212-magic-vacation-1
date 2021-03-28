@@ -24,7 +24,7 @@ class AccentTypographyBuild {
     if (!this._element) {
       return;
     }
-    const text = this._element.textContent.trim().split(` `).filter((letter) => letter !== '');
+    const text = this._element.textContent.trim().split(` `).filter((letter) => letter !== ``);
 
     const content = text.reduce((fragmentParent, word, indexword) => {
       const wordElement = Array.from(word).reduce((fragment, letter) => {
@@ -56,60 +56,60 @@ class AccentTypographyBuild {
 
 // Add text animation
 const animationIntroTitle = new AccentTypographyBuild(
-  `.intro__title`,
-  500,
-  `text-animated`,
-  `transform`
+    `.intro__title`,
+    500,
+    `text-animated`,
+    `transform`
 );
 setTimeout(() => {
   animationIntroTitle.runAnimation();
 }, 200);
 
 const animationIntroDate = new AccentTypographyBuild(
-  `.intro__date`,
-  500,
-  `text-animated`,
-  `transform`
+    `.intro__date`,
+    500,
+    `text-animated`,
+    `transform`
 );
 setTimeout(() => {
   animationIntroDate.runAnimation();
 }, 700);
 
 const animationHistoryTitle = new AccentTypographyBuild(
-  `.slider__item-title`,
-  500,
-  `text-animated`,
-  `transform`
+    `.slider__item-title`,
+    500,
+    `text-animated`,
+    `transform`
 );
 setTimeout(() => {
   animationHistoryTitle.runAnimation();
 }, 200);
 
 const animationPrizesTitle = new AccentTypographyBuild(
-  `.prizes__title`,
-  500,
-  `text-animated`,
-  `transform`
+    `.prizes__title`,
+    500,
+    `text-animated`,
+    `transform`
 );
 setTimeout(() => {
   animationPrizesTitle.runAnimation();
 }, 200);
 
 const animationRulesTitle = new AccentTypographyBuild(
-  `.rules__title`,
-  500,
-  `text-animated`,
-  `transform`
+    `.rules__title`,
+    500,
+    `text-animated`,
+    `transform`
 );
 setTimeout(() => {
   animationRulesTitle.runAnimation();
 }, 200);
 
 const animationGameTitle = new AccentTypographyBuild(
-  `.game__title`,
-  500,
-  `text-animated`,
-  `transform`
+    `.game__title`,
+    500,
+    `text-animated`,
+    `transform`
 );
 setTimeout(() => {
   animationGameTitle.runAnimation();
