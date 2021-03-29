@@ -1471,7 +1471,7 @@ img {
   0% {
     opacity: 0;
     color: transparent; }
-  50% {
+  60% {
     opacity: 1;
     color: transparent; }
   100% {
@@ -2304,7 +2304,7 @@ img {
   .screen--show .result__image-leaf-blue-1 {
     animation-name: result-leaf-1-appear;
     animation-duration: 2s;
-    animation-delay: 500ms;
+    animation-delay: 50ms;
     animation-fill-mode: both;
     animation-direction: normal;
     animation-timing-function: ease-in-out;
@@ -2317,7 +2317,7 @@ img {
   .screen--show .result__image-leaf-blue-2 {
     animation-name: result-leaf-2-appear;
     animation-duration: 2s;
-    animation-delay: 500ms;
+    animation-delay: 50ms;
     animation-fill-mode: both;
     animation-direction: normal;
     animation-timing-function: ease-in-out;
@@ -2326,11 +2326,11 @@ img {
 .result__image-leaf-green {
   width: 42%;
   left: 50%;
-  bottom: 16vh; }
+  bottom: 18vh; }
   .screen--show .result__image-leaf-green {
     animation-name: result-leaf-green-appear;
     animation-duration: 2s;
-    animation-delay: 550ms;
+    animation-delay: 100ms;
     animation-fill-mode: both;
     animation-direction: normal;
     animation-timing-function: ease-in-out;
@@ -2389,48 +2389,48 @@ img {
 @keyframes result-leaf-1-appear {
   0% {
     opacity: 0;
-    transform: rotate(15deg); }
+    transform: rotate(-30deg); }
   8% {
     transform: rotate(0); }
   25% {
-    transform: rotate(10deg); }
+    transform: rotate(-15deg); }
   45% {
     opacity: 1;
     transform: rotate(0deg); }
   60% {
-    transform: rotate(4deg); }
+    transform: rotate(-4deg); }
   100% {
     transform: rotate(0deg); } }
 
 @keyframes result-leaf-2-appear {
   0% {
     opacity: 0;
-    transform: rotate(-25deg); }
+    transform: rotate(30deg); }
   10% {
     transform: rotate(0); }
   30% {
-    transform: rotate(-15deg); }
+    transform: rotate(15deg); }
   50% {
     opacity: 1;
     transform: rotate(0); }
   70% {
-    transform: rotate(-5deg); }
+    transform: rotate(5deg); }
   100% {
     transform: rotate(0); } }
 
 @keyframes result-leaf-green-appear {
   0% {
     opacity: 0;
-    transform: rotate(10deg); }
+    transform: rotate(-8deg); }
   10% {
     transform: rotate(0); }
   30% {
-    transform: rotate(8deg); }
+    transform: rotate(-6deg); }
   50% {
     opacity: 1;
     transform: rotate(0deg); }
   75% {
-    transform: rotate(3deg); }
+    transform: rotate(-2deg); }
   100% {
     transform: rotate(0deg); } }
 
