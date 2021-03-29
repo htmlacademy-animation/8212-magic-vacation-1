@@ -87,7 +87,7 @@
           <div class="intro__content">
             <div class="intro__info">
               <p class="intro__label">Даты проведения конкурса:</p>
-              <p class="intro__date">01 — 31.05 / 2020</p>
+              <p class="intro__date">01&nbsp;—&nbsp;31.05&nbsp;/&nbsp;2020</p>
             </div>
             <div class="intro__message">
               <p>
@@ -320,7 +320,9 @@
               <div class="chat__footer">
                 <form action="#" method="post" class="form" id="message-form">
                   <label for="message-field" class="visually-hidden">Поле для ввода вопроса</label>
-                  <input type="text" class="form__field" id="message-field">
+                  <div class="form__field-wrapper">
+                    <input type="text" class="form__field" id="message-field">
+                  </div>
                   <button class="form__button btn">
                     Узнать
                     <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -380,7 +382,9 @@
           <div class="result__form">
             <form action="#" method="post" class="form form--result">
               <label for="email-field" class="form__label">зарегистрируй результат</label>
-              <input type="email" class="form__field" id="email-field" placeholder="e-mail для регистации результата и получения приза" required>
+              <div class="form__field-wrapper">
+                <input type="email" class="form__field" id="email-field" placeholder="e-mail для регистации результата и получения приза" required>
+              </div>
               <button class="form__button btn">
                 отправить
                 <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -398,10 +402,11 @@
       <div class="screen__wrapper">
         <div class="result result--prize">
           <div class="result__image">
-            <picture>
-              <source srcset="img/result2-mob.png 1x, img/result2-mob@2x.png 2x" media="(max-width: 768px) and (orientation: portrait)">
-              <img src="img/result2.png" srcset="img/result2@2x.png 2x" alt="">
-            </picture>
+            <img class="result__image-leaf-blue-1" src="img/module-2/win-suitcase/leaf-blue-1.png" alt="">
+            <img class="result__image-leaf-blue-2" src="img/module-2/win-suitcase/leaf-blue-2.png" alt="">
+            <img class="result__image-leaf-green" src="img/module-2/win-suitcase/leaf-green.png" alt="">
+            <img class="result__image-suitcase" src="img/module-2/win-suitcase/suitcase.png" alt="">
+            <img class="result__image-flamingo" src="img/module-2/win-suitcase/flamingo.png" alt="">
           </div>
           <h2 class="result__title">
             <span class="visually-hidden">ПОбеда!</span>
@@ -432,7 +437,9 @@
           <div class="result__form">
             <form action="#" method="post" class="form form--result">
               <label for="email-field2" class="form__label">зарегистрируй результат</label>
-              <input type="email" class="form__field" id="email-field2" placeholder="e-mail для регистации результата и получения приза" required>
+              <div class="form__field-wrapper">
+                <input type="email" class="form__field" id="email-field2" placeholder="e-mail для регистации результата и получения приза" required>
+              </div>
               <button class="form__button btn">
                 отправить
                 <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
