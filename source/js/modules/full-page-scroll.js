@@ -63,6 +63,13 @@ export default class FullPageScroll {
     setTimeout(() => {
       this.screenElements[this.activeScreen].classList.add(`active`);
     }, 100);
+
+    // adds a class for color themes
+    if (this.activeScreen === 1) {
+      document.body.classList.add(`theme`);
+    } else {
+      document.body.classList.remove(`theme`);
+    }
   }
 
   changeActiveMenuItem() {
