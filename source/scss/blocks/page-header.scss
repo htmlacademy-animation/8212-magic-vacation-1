@@ -326,32 +326,32 @@
 .theme.theme--blue {
 
   .screen--story {
-    background-color: #3e72ee;
+    background-color: $c-blue;
   }
 
   a {
     &:hover,
     &:focus {
-      color: #a0ceff;
+      color: $c-light-blue;
 
       &::after {
-        background-color: #a0ceff;
+        background-color: $c-light-blue;
       }
     }
   }
 
   .social-block__toggler {
-    color: #3e72ee;
+    color: $c-blue;
 
     &:hover {
-      color: #a0ceff;
+      color: $c-light-blue;
     }
 
     &:focus {
-      color: #a0ceff;
+      color: $c-light-blue;
 
       &::before {
-        border-color: #a0ceff;
+        border-color: $c-light-blue;
       }
     }
 
@@ -360,14 +360,14 @@
       color: $c-light;
 
       &::before {
-        background-color: #a0ceff;
-        border-color: #a0ceff;
+        background-color: $c-light-blue;
+        border-color: $c-light-blue;
       }
     }
   }
 
   .social-block--active .social-block__toggler {
-    color: #a0ceff;
+    color: $c-light-blue;
   }
 
   .social-block--active:active .social-block__toggler,
@@ -376,17 +376,17 @@
   }
 
   .slider__control {
-    color: #3e72ee;
+    color: $c-blue;
 
     &:hover {
-      color: #a0ceff;
+      color: $c-light-blue;
     }
 
     &:focus {
-      color: #a0ceff;
+      color: $c-light-blue;
 
       &::before {
-        border-color: #a0ceff;
+        border-color: $c-light-blue;
       }
     }
 
@@ -395,8 +395,8 @@
       color: $c-light;
 
       &::before {
-        background-color: #a0ceff;
-        border-color: #a0ceff;
+        background-color: $c-light-blue;
+        border-color: $c-light-blue;
       }
     }
   }
@@ -411,10 +411,10 @@
   a {
     &:hover,
     &:focus {
-      color: #3e72ee;
+      color: $c-blue;
 
       &::after {
-        background-color: #3e72ee;
+        background-color: $c-blue;
       }
     }
   }
@@ -423,14 +423,14 @@
     color: #a7d4ff;
 
     &:hover {
-      color: #3e72ee;
+      color: $c-blue;
     }
 
     &:focus {
-      color: #3e72ee;
+      color: $c-blue;
 
       &::before {
-        border-color: #3e72ee;
+        border-color: $c-blue;
       }
     }
 
@@ -439,14 +439,14 @@
       color: $c-light;
 
       &::before {
-        background-color: #3e72ee;
-        border-color: #3e72ee;
+        background-color: $c-blue;
+        border-color: $c-blue;
       }
     }
   }
 
   .social-block--active .social-block__toggler {
-    color: #3e72ee;
+    color: $c-blue;
   }
 
   .social-block--active:active .social-block__toggler,
@@ -455,17 +455,17 @@
   }
 
   .slider__control {
-    color: #3e72ee;
+    color: $c-blue;
 
     &:hover {
-      color: #3e72ee;
+      color: $c-blue;
     }
 
     &:focus {
-      color: #3e72ee;
+      color: $c-blue;
 
       &::before {
-        border-color: #3e72ee;
+        border-color: $c-blue;
       }
     }
 
@@ -474,8 +474,8 @@
       color: $c-light;
 
       &::before {
-        background-color: #3e72ee;
-        border-color: #3e72ee;
+        background-color: $c-blue;
+        border-color: $c-blue;
       }
     }
   }
@@ -490,26 +490,26 @@
   a {
     &:hover,
     &:focus {
-      color: #5f458c;
+      color: $c-dark;
 
       &::after {
-        background-color: #5f458c;
+        background-color: $c-dark;
       }
     }
   }
 
   .social-block__toggler {
-    color: #a67ee5;
+    color: $c-purple;
 
     &:hover {
-      color: #5f458c;
+      color: $c-dark;
     }
 
     &:focus {
-      color: #5f458c;
+      color: $c-dark;
 
       &::before {
-        border-color: #5f458c;
+        border-color: $c-dark;
       }
     }
 
@@ -518,14 +518,14 @@
       color: $c-light;
 
       &::before {
-        background-color: #5f458c;
-        border-color: #5f458c;
+        background-color: $c-dark;
+        border-color: $c-dark;
       }
     }
   }
 
   .social-block--active .social-block__toggler {
-    color: #5f458c;
+    color: $c-dark;
   }
 
   .social-block--active:active .social-block__toggler,
@@ -534,17 +534,17 @@
   }
 
   .slider__control {
-    color: #a67ee5;
+    color: $c-purple;
 
     &:hover {
-      color: #5f458c;
+      color: $c-dark;
     }
 
     &:focus {
-      color: #5f458c;
+      color: $c-dark;
 
       &::before {
-        border-color: #5f458c;
+        border-color: $c-dark;
       }
     }
 
@@ -553,8 +553,8 @@
       color: $c-light;
 
       &::before {
-        background-color: #5f458c;
-        border-color: #5f458c;
+        background-color: $c-dark;
+        border-color: $c-dark;
       }
     }
   }
