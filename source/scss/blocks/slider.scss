@@ -350,7 +350,7 @@
 
 @keyframes slider-control-prev-rollin {
   from {
-    transform: translateX(-100px) rotate(-180deg);
+    transform: translateX(-100%) rotate(-180deg);
   }
   to {
     transform: translateX(0) rotate(0deg);
@@ -359,7 +359,7 @@
 
 @keyframes slider-control-next-rollin {
   from {
-    transform: translateX(100px) rotate(180deg);
+    transform: translateX(100%) rotate(180deg);
   }
   to {
     transform: translateX(0) rotate(0deg);
