@@ -281,6 +281,10 @@
   line-height: 1.2;
   color: $c-light;
 
+  animation-name: resultButtonFadeIn;
+  animation-duration: 600ms;
+  animation-fill-mode: both;
+
   @media (min-width: $stop-scaling) {
     margin: auto auto 10px;
     min-width: 340px;
@@ -312,6 +316,10 @@
     width: 4rem;
     height: 4rem;
     color: $c-dark;
+
+    animation-name: resultButtonIconRollIn;
+    animation-duration: 500ms;
+    animation-fill-mode: both;
 
     @media (min-width: $stop-scaling) {
       margin-left: 15px;
@@ -431,5 +439,24 @@
     @media (max-width: $mobile) and (orientation: landscape) {
       width: 45rem;
     }
+  }
+}
+
+
+@keyframes resultButtonFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes resultButtonIconRollIn {
+  from {
+    transform: translateX(120%) rotate(180deg);
+  }
+  to {
+    transform: translateX(0) rotate(0deg);
   }
 }

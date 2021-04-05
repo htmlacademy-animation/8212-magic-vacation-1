@@ -320,3 +320,242 @@
     width: 100%;
   }
 }
+
+
+// Themes
+.theme.theme--blue {
+
+  .screen--story {
+    background-color: $c-blue;
+  }
+
+  a {
+    &:hover,
+    &:focus {
+      color: $c-light-blue;
+
+      &::after {
+        background-color: $c-light-blue;
+      }
+    }
+  }
+
+  .social-block__toggler {
+    color: $c-blue;
+
+    &:hover {
+      color: $c-light-blue;
+    }
+
+    &:focus {
+      color: $c-light-blue;
+
+      &::before {
+        border-color: $c-light-blue;
+      }
+    }
+
+    &:active,
+    &:active:focus {
+      color: $c-light;
+
+      &::before {
+        background-color: $c-light-blue;
+        border-color: $c-light-blue;
+      }
+    }
+  }
+
+  .social-block--active .social-block__toggler {
+    color: $c-light-blue;
+  }
+
+  .social-block--active:active .social-block__toggler,
+  .social-block--active:active:focus .social-block__toggler {
+    color: $c-light;
+  }
+
+  .slider__control {
+    color: $c-blue;
+
+    &:hover {
+      color: $c-light-blue;
+    }
+
+    &:focus {
+      color: $c-light-blue;
+
+      &::before {
+        border-color: $c-light-blue;
+      }
+    }
+
+    &:active,
+    &:active:focus {
+      color: $c-light;
+
+      &::before {
+        background-color: $c-light-blue;
+        border-color: $c-light-blue;
+      }
+    }
+  }
+}
+
+.theme.theme--light-blue {
+
+  .screen--story {
+    background-color: #90b8e2;
+  }
+
+  a {
+    &:hover,
+    &:focus {
+      color: $c-blue;
+
+      &::after {
+        background-color: $c-blue;
+      }
+    }
+  }
+
+  .social-block__toggler {
+    color: #a7d4ff;
+
+    &:hover {
+      color: $c-blue;
+    }
+
+    &:focus {
+      color: $c-blue;
+
+      &::before {
+        border-color: $c-blue;
+      }
+    }
+
+    &:active,
+    &:active:focus {
+      color: $c-light;
+
+      &::before {
+        background-color: $c-blue;
+        border-color: $c-blue;
+      }
+    }
+  }
+
+  .social-block--active .social-block__toggler {
+    color: $c-blue;
+  }
+
+  .social-block--active:active .social-block__toggler,
+  .social-block--active:active:focus .social-block__toggler {
+    color: $c-light;
+  }
+
+  .slider__control {
+    color: $c-blue;
+
+    &:hover {
+      color: $c-blue;
+    }
+
+    &:focus {
+      color: $c-blue;
+
+      &::before {
+        border-color: $c-blue;
+      }
+    }
+
+    &:active,
+    &:active:focus {
+      color: $c-light;
+
+      &::before {
+        background-color: $c-blue;
+        border-color: $c-blue;
+      }
+    }
+  }
+}
+
+.theme.theme--violet {
+
+  .screen--story {
+    background-color: #a07de4;
+  }
+
+  a {
+    &:hover,
+    &:focus {
+      color: $c-dark;
+
+      &::after {
+        background-color: $c-dark;
+      }
+    }
+  }
+
+  .social-block__toggler {
+    color: $c-purple;
+
+    &:hover {
+      color: $c-dark;
+    }
+
+    &:focus {
+      color: $c-dark;
+
+      &::before {
+        border-color: $c-dark;
+      }
+    }
+
+    &:active,
+    &:active:focus {
+      color: $c-light;
+
+      &::before {
+        background-color: $c-dark;
+        border-color: $c-dark;
+      }
+    }
+  }
+
+  .social-block--active .social-block__toggler {
+    color: $c-dark;
+  }
+
+  .social-block--active:active .social-block__toggler,
+  .social-block--active:active:focus .social-block__toggler {
+    color: $c-light;
+  }
+
+  .slider__control {
+    color: $c-purple;
+
+    &:hover {
+      color: $c-dark;
+    }
+
+    &:focus {
+      color: $c-dark;
+
+      &::before {
+        border-color: $c-dark;
+      }
+    }
+
+    &:active,
+    &:active:focus {
+      color: $c-light;
+
+      &::before {
+        background-color: $c-dark;
+        border-color: $c-dark;
+      }
+    }
+  }
+}

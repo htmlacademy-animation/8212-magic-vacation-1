@@ -156,6 +156,16 @@
   width: 17rem;
   z-index: 1;
 
+  animation-name: slider-controls-fadein;
+  animation-duration: 500ms;
+  animation-fill-mode: both;
+  animation-play-state: paused;
+  animation-delay: 500ms;
+
+  .active & {
+    animation-play-state: running;
+  }
+
   @media (min-width: $stop-scaling) {
     bottom: 28px;
     width: 170px;
@@ -191,6 +201,7 @@
     border: 2px solid $c-light;
     border-radius: 50%;
     z-index: -1;
+    transition: width 0.2s ease, height 0.2s ease;
   }
 
   svg {
@@ -240,6 +251,26 @@
     opacity: 0.5;
     pointer-events: none;
   }
+
+  &--prev,
+  &--next {
+    will-change: transform;
+    animation-duration: 500ms;
+    animation-fill-mode: both;
+    animation-delay: 500ms;
+    animation-play-state: paused;
+
+    .active & {
+      animation-play-state: running;
+    }
+  }
+
+  &--prev {
+    animation-name: slider-control-prev-rollin;
+  }
+  &--next {
+    animation-name: slider-control-next-rollin;
+  }
 }
 
 .slider__pagination.swiper-pagination {
@@ -254,6 +285,16 @@
   font-weight: 400;
   font-size: 2.4rem;
   line-height: 4rem;
+
+  animation-name: slider-controls-fadein;
+  animation-duration: 500ms;
+  animation-fill-mode: both;
+  animation-play-state: paused;
+  animation-delay: 500ms;
+
+  .active & {
+    animation-play-state: running;
+  }
 
   @media (min-width: $stop-scaling) {
     bottom: 28px;
@@ -295,5 +336,32 @@
       height: 0.4rem;
       background-color: $c-light;
     }
+  }
+}
+
+@keyframes slider-controls-fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slider-control-prev-rollin {
+  from {
+    transform: translateX(-100%) rotate(-180deg);
+  }
+  to {
+    transform: translateX(0) rotate(0deg);
+  }
+}
+
+@keyframes slider-control-next-rollin {
+  from {
+    transform: translateX(100%) rotate(180deg);
+  }
+  to {
+    transform: translateX(0) rotate(0deg);
   }
 }
